@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+	<!-- Logo展示的布局 -->
+	<RelativeLayout 
+	    android:id="@+id/logo_relative_lyt"
+	    android:layout_width="150dp"
+	    android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+	    >
+	    <ImageView
+	        android:id="@+id/imageView1"
+	        android:layout_width="150dp"
+	        android:layout_height="130dp"
+	        android:scaleType="fitXY"
+	        android:src="@drawable/logo" />
+	    <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="西         军           电"
+	        android:layout_below="@id/imageView1"
+	        android:gravity="center_horizontal"
+	        android:layout_marginTop="6dp"
+	        />
+	</RelativeLayout>
+	<!-- 用于用户名称设置的布局 -->
+
+</RelativeLayout>
